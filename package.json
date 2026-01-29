@@ -7,11 +7,11 @@
     "npm": "9.x"
   },
   "scripts": {
-    "install-client": "cd client && npm install",
-    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install --include=dev",
+    "install-server": "cd server && npm install --include=dev",
     "build-client": "cd client && npm run build",
     "build": "npm run install-client && npm run install-server && npm run build-client",
-    "start": "cd server && node dist/server.js",
+    "start": "cd server && npx ts-node src/server.ts",
     "dev": "concurrently \"npm run dev-server\" \"npm run dev-client\"",
     "dev-server": "cd server && npm run dev",
     "dev-client": "cd client && npm run dev",
