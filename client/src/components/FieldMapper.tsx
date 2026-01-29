@@ -12,7 +12,7 @@ import {
   useDeleteMapping,
 } from '../hooks/useQuery';
 import { ArrowRight, ArrowLeft, ArrowLeftRight, Trash2, GripVertical } from 'lucide-react';
-import { AddeparAttribute, SalesforceField, FieldMapping } from '../types/integration';
+import { FieldMapping } from '../types/integration';
 
 function DraggableField({ id, label, type }: { id: string; label: string; type: string }) {
   const { attributes, listeners, setNodeRef, transform, isDragging } = useDraggable({ id });

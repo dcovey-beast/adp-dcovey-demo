@@ -1,11 +1,10 @@
-import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Progress } from './ui/progress';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './ui/table';
 import { useSyncStatus, useSyncHistory, useTriggerSync } from '../hooks/useQuery';
-import { Play, RefreshCw, AlertCircle, CheckCircle2, Clock } from 'lucide-react';
+import { Play, AlertCircle, CheckCircle2, Clock } from 'lucide-react';
 import { formatDateTime, formatDuration } from '../lib/utils';
 import { SyncJob } from '../types/integration';
 

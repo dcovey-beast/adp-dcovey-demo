@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Select } from './ui/select';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './ui/table';
 import { useSyncLogs } from '../hooks/useQuery';
 import { AlertCircle, Info, AlertTriangle, ChevronDown, ChevronUp, Download } from 'lucide-react';
 import { formatDateTime } from '../lib/utils';

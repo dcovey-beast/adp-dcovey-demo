@@ -9,7 +9,7 @@ import { formatDateTime } from '../lib/utils';
 
 export function ConnectionSetup() {
   const [environment, setEnvironment] = useState<'production' | 'sandbox'>('production');
-  const { data: status, isLoading: statusLoading } = useSalesforceStatus();
+  const { data: status } = useSalesforceStatus();
   const connectMutation = useSalesforceConnect();
 
   const handleConnect = async () => {
